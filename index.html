@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ibrahim - Developer Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      /* Existing CSS */
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        background-color: rgb(0, 0, 33);
+        color: white;
+        font-family: "Poppins", sans-serif;
+      }
+      nav {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 80px;
+        background-color: rgb(18, 18, 62);
+      }
+      nav ul {
+        display: flex;
+        justify-content: center;
+      }
+      nav ul li {
+        list-style: none;
+        margin: 0px 23px;
+      }
+      nav ul li a {
+        text-decoration: none;
+        color: white;
+      }
+      nav ul li a:hover {
+        color: rgb(153, 153, 226);
+        font-size: 1.01rem;
+      }
+      main hr {
+        border: 0;
+        background: #9c97f1;
+        height: 1.2px;
+        margin: 60px 84px;
+      }
+      .left {
+        font-size: 1.5rem;
+      }
+      .firstSection {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin: 130px 0px;
+      }
+      .firstSection > div {
+        width: 30%;
+      }
+      .leftSection {
+        font-size: 3rem;
+      }
+      .leftSection .buttons {
+        padding: 50px 0;
+      }
+      .leftSection .btn {
+        padding: 12px;
+        background: #1e2167;
+        color: white;
+        border: 2px solid white;
+        border-radius: 6px;
+        cursor: pointer;
+      }
+      .rightSection img {
+        width: 140%;
+      }
+      .purple {
+        color: rgb(170, 107, 228);
+      }
+      .secondSection {
+        max-width: 80vw;
+        margin: auto;
+        height: 80vh;
+      }
+      .secondSection h1 {
+        font-size: 1.9rem;
+      }
+      .secondSection h1 span {
+        color: rgb(140, 140, 213);
+        font-weight: 400;
+      }
+      footer {
+        background-color: #0e0e1a;
+        color: white;
+        padding: 20px 0;
+        text-align: center;
+      }
+      .footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+      }
+      .footer-links a {
+        color: white;
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        margin: 5px 0;
+      }
+      .icon {
+        width: 20px;
+        height: 20px;
+        margin-right: 8px;
+      }
+      .footer-rights {
+        color: gray;
+        margin-top: 10px;
+      }
+
+      /* New CSS for Projects Section */
+      .projectsSection {
+        margin: 60px 84px;
+      }
+      .projectCard {
+        background-color: #1e2167;
+        padding: 20px;
+        border-radius: 8px;
+        margin-bottom: 20px;
+      }
+      .projectCard h3 {
+        margin-bottom: 10px;
+        color: rgb(170, 107, 228);
+      }
+      .projectCard p {
+        margin: 5px 0;
+      }
+      .projectCard a {
+        color: #9c97f1;
+        text-decoration: none;
+        margin-right: 15px;
+      }
+      .projectCard a:hover {
+        text-decoration: underline;
+      }
+
+      .secondSection {
+        max-width: 80vw;
+        margin: 20px auto; /* Reduced margin for tighter layout */
+        height: auto; /* Adjust height as needed */
+      }
+
+      .projectsSection {
+        margin: 20px 84px; /* Reduced margin for consistent spacing */
+      }
+
+      .projectCard {
+        background-color: #1e2167;
+        padding: 20px;
+        border-radius: 8px;
+        margin-bottom: 10px; /* Reduce gap between cards */
+      }
+
+      .footer-links a {
+        color: white; /* Change text color to white */
+      }
+
+      .footer-links a img {
+        filter: invert(1); /* Invert the colors of the icons */
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="left">Ibrahim's Portfolio</div>
+        <div class="right">
+          <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/">About</a></li>
+            <li><a href="/">Projects</a></li>
+            <li><a href="/">Contact Me</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section class="firstSection">
+        <div class="leftSection">
+          Hi, My name is <span class="purple">Ibrahim</span>
+          <div>and I am a passionate</div>
+          <div>Web Developer</div>
+          <div class="buttons">
+            <button class="btn" onclick="window.open('resume.pdf')">
+              Download Resume
+            </button>
+            <button
+              class="btn"
+              onclick="window.open('https://github.com/SonOfAdam24')"
+            >
+              Visit GitHub
+            </button>
+          </div>
+        </div>
+        <div class="rightSection">
+          <img src="bg.png" alt="" />
+        </div>
+      </section>
+      <hr />
+      <section class="secondSection">
+        <h1>Experience:<span>Fresher</span></h1>
+      </section>
+      <!-- Projects Section -->
+      <section class="projectsSection">
+        <h2>Projects</h2>
+        <!-- <div class="projectCard">
+          <h3>Project 1: AI Video Editor - XORA Landing Page</h3>
+          <p>
+            A landing page of an AI video editor showcasing my skills in HTML,
+            CSS, JavaScript, and React.
+          </p>
+          <p>Technologies used: HTML, CSS, JavaScript, React</p>
+          <a
+            href="https://github.com/SonOfAdam24/xora-landing-page"
+            target="_blank"
+            >View on GitHub</a
+          >
+        </div> -->
+        <div class="projectCard">
+          <h3>Project 1: Prescripto - Doctor Booking App</h3>
+          <p>
+            A doctor booking appointment app designed to streamline the
+            patient-doctor interaction process. This project highlights my
+            proficiency in creating user-friendly interfaces using React for
+            dynamic rendering and TailwindCSS for efficient styling. The app
+            features real-time appointment scheduling, user authentication, and
+            responsive design, ensuring a seamless user experience across
+            devices.
+          </p>
+          <p>Technologies used: React, TailwindCSS</p>
+          <a
+            href="https://github.com/SonOfAdam24/Prescripto-Doctor-Booking-App"
+            target="_blank"
+            >View on GitHub</a
+          >
+          <a
+            href="https://astonishing-alpaca-b84931.netlify.app/"
+            target="_blank"
+            >Live Demo</a
+          >
+        </div>
+        <div class="projectCard">
+          <h3>Project 2: Tomato - Food Delivery App</h3>
+          <p>
+            Tomato is a dynamic food delivery app that emphasizes my ability to
+            build responsive and interactive web applications using modern web
+            technologies. This project showcases my skills in creating
+            user-centric interfaces with React, ensuring a smooth user
+            experience, and handling real-time data updates with JavaScript. The
+            app incorporates clean UI/UX design, efficient layout structuring
+            with CSS, and seamless functionality across devices.
+          </p>
+          <p>Technologies used: HTML, CSS, JavaScript, React</p>
+          <a
+            href="https://github.com/SonOfAdam24/Tomato-food-delivery-app"
+            target="_blank"
+            >View on GitHub</a
+          >
+          <a href="https://sage-smakager-7d0231.netlify.app/" target="_blank"
+            >Live Demo</a
+          >
+        </div>
+        <div class="projectCard">
+          <h3>Project 3: iTask - Todo List App</h3>
+          <p>
+            Developed iTask, a comprehensive to-do list app showcasing my
+            expertise in building responsive and interactive web applications
+            using modern web technologies. This project highlights my skills in
+            implementing full CRUD functionality with React, providing a smooth
+            user experience. The app features clean UI/UX design, efficient
+            layout structuring with CSS, and seamless performance across
+            devices.
+          </p>
+          <p>Technologies used: HTML, CSS, JavaScript, React</p>
+          <a
+            href="https://github.com/SonOfAdam24/iTask-todo-list-app"
+            target="_blank"
+            >View on GitHub</a
+          >
+          <a
+            href="https://admirable-monstera-529128.netlify.app"
+            target="_blank"
+            >Live Demo</a
+          >
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="footer">
+        <div class="footer-links">
+          <a href="https://github.com/SonOfAdam24" target="_blank">
+            <img src="github.png" alt="GitHub" class="icon" /> GitHub
+          </a>
+          <a
+            href="https://www.linkedin.com/in/ibrahim-vishwakarma-12a5b6327/"
+            target="_blank"
+          >
+            <img src="linkedin.png" alt="LinkedIn" class="icon" /> LinkedIn
+          </a>
+          <a href="mailto:ibrahimibnadam22@gmail.com">
+            <img src="gmail-logo.png" alt="Email" class="icon" />
+            ibrahimibnadam22@gmail.com
+          </a>
+        </div>
+      </div>
+      <div class="footer-rights">
+        &copy; 2024 Ibrahim's Portfolio. All rights reserved.
+      </div>
+    </footer>
+  </body>
+</html>
